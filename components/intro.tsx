@@ -40,12 +40,12 @@ export default function Intro() {
 
         </div>
 
-        <motion.p className="mb-10 mt-[3rem] px-4 sm:leading-[4] leading-[2.5]  font-medium"
+        <motion.h1 className="mb-10 mt-[3rem] px-4 sm:leading-[4] leading-[2.5]  font-medium"
         initial = {{opacity:0, y:100}}
         animate={{opacity:1, y:0}}>
         <span className=' text-6xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg hover:text-gray-700 transition duration-300 ease-in-out'>Evan Leong </span><br></br>
         <span className='text-slate-500 sm:text-3xl text-1xl'>Full Stack Software Engineer</span>
-        </motion.p>
+        </motion.h1>
 
         <motion.div className='flex flex-col sm:flex-row font-medium items-center justify-center gap-4 px-4 text-lg drop-shadow-sm'
             initial = {{opacity:0, y:100}}
@@ -77,8 +77,3 @@ export default function Intro() {
   )
 }
 
-// My name is Evan Leong and I am entering my senior year at the University of California, Irvine, on the path to attain a Bachelor of Science in Computer Science. 
-//         Prior to this, I studied at Diablo Valley College and earned an Associate of Science in Computer Science, achieving a 3.95 GPA. 
-//         My skill set includes C++, Python, JavaScript, and SQL, alongside several other programming languages. 
-//         I am eagerly looking forward to the prospect of delving into more practical experiences, launching my career into the field after my 
-//         college journey.
