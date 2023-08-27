@@ -3,7 +3,11 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import profilePic from '@/public/pfp.jpg'
-
+import Link from 'next/link'
+import { BsArrowRight, BsGithub } from 'react-icons/bs';
+import { HiDownload } from 'react-icons/hi';
+import { BsLinkedin } from 'react-icons/bs';
+import { FaGithubSquare } from 'react-icons/fa';
 
 export default function Intro() {
   return (
@@ -39,13 +43,35 @@ export default function Intro() {
         <motion.p className="mb-10 mt-[3rem] px-4 sm:leading-[4] leading-[2.5]  font-medium"
         initial = {{opacity:0, y:100}}
         animate={{opacity:1, y:0}}>
-        <span className=' text-6xl sm:text-8xl font-extrabold text-stroke-white text-blue-300 drop-shadow-lg hover:text-blue-400 transition duration-300 ease-in-out'>Evan Leong </span><br></br>
+        <span className=' text-6xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg hover:text-gray-700 transition duration-300 ease-in-out'>Evan Leong </span><br></br>
         <span className='text-slate-500 sm:text-3xl text-1xl'>Full Stack Software Engineer</span>
         </motion.p>
 
-        <div>
-            
-        </div>
+        <motion.div className='flex flex-col sm:flex-row font-medium items-center justify-center gap-4 px-4 text-lg drop-shadow-sm'
+            initial = {{opacity:0, y:100}}
+            animate={{opacity:1, y:0}}
+            transition={{delay:0.1,}}
+        >
+            <a className='bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer'
+            href='/Leong_Evan_Resume.pdf' target="_blank" rel="noopener noreferrer">
+                Resume 
+                {/* <HiDownload /> {" "} */}
+            </a>
+            <Link href="#contact"
+            className='bg-white text-gray-700  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-100 hover:text-gray-900 active:scale-105 transition'>
+             Contact 
+            {/* <BsArrowRight />{" "} */}
+            </Link>     
+            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-100 hover:text-gray-800 active:scale-105 transition cursor-pointer '
+            href='https://www.linkedin.com/in/evanrleong/' target="_blank">
+                <BsLinkedin />
+            </a>
+            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.25rem] rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-100 hover:text-gray-800 active:scale-105 transition cursor-pointer'
+            href='https://github.com/EvLeong1' target="_blank">
+                <FaGithubSquare />
+            </a>
+          
+        </motion.div>
     </section>
     
   )
