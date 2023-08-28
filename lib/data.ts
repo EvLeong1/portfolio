@@ -2,8 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
+import acraffle1Png from "@/public/acraffle1.png";
+import acraffle2Png from "@/public/acraffle2.png";
+import prosperPng from "@/public/prosperSearch.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -66,26 +67,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "ACraffle | Automated Chat Bot",
+    title: "ACraffle",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    "A Python-coded Discord bot, hosted on Heroku, combines user-friendly commands and advanced search tecniques in MongoDB to offer an engaging and efficient social experience.",
     tags: ["Python", "MongoDB", "Discord API", "Heroku"],
-    // imageUrl: corpcommentImg,
+    imageUrl: acraffle2Png,
+    link: 'https://github.com/EvLeong1/acraffle2',
   },
   {
-    title: "ProsperSearch | Search Engine",
+    title: "ProsperSearch",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["Python", "OpenAI API", "Next.js", "Tailwind", "Redux"],
-    // imageUrl: rmtdevImg,
+    tags: ["Python", "OpenAI API", "Flask", "HTML / CSS"],
+    imageUrl: prosperPng,
+    link: 'https://github.com/EvLeong1/prosperSearchEngine',
   },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    // imageUrl: wordanalyticsImg,
-  },
+  // {
+  //   title: "Word Analytics",
+  //   description:
+  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+  //   // imageUrl: wordanalyticsImg,
+  // },
 ] as const;
 
 export const skillsData = [
