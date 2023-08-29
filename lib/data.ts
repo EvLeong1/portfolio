@@ -77,7 +77,7 @@ export const projectsData = [
   {
     title: "ProsperSearch",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      " An AI-powered search engine made with Python using the OpenAI API for site summaries, tf-idf ranking, and a user-friendly Flask web GUI, achieving sub-150 ms query responses.",
     tags: ["Python", "OpenAI API", "Flask", "HTML / CSS"],
     imageUrl: prosperPng,
     link: 'https://github.com/EvLeong1/prosperSearchEngine',

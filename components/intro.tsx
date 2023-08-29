@@ -1,17 +1,22 @@
 "use client";
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion} from 'framer-motion'
 import profilePic from '@/public/pfp.jpg'
 import Link from 'next/link'
 import { BsArrowRight, BsGithub } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
+import { useActiveSectionContext } from '@/context/active-section-context';
+import { useInView } from 'react-intersection-observer';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
+    const { ref } = useSectionInView("Home",0.5);
+  
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+    <section ref = {ref} id = "home" className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-48'>
         <div className='flex items-center justify-center'>
             <div className='relative'>
                 <motion.div
@@ -43,7 +48,8 @@ export default function Intro() {
         <motion.h1 className="mb-10 mt-[3rem] px-4 sm:leading-[4] leading-[2.5]  font-medium"
         initial = {{opacity:0, y:100}}
         animate={{opacity:1, y:0}}>
-        <span className=' text-6xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg hover:text-gray-700 transition duration-300 ease-in-out'>Evan Leong </span><br></br>
+        <span className=' text-6xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg hover:text-gray-700 transition cursor-default'
+        >Evan Leong </span><br></br>
         <span className='text-slate-500 sm:text-3xl text-1xl'>Full Stack Software Engineer</span>
         </motion.h1>
 
@@ -76,4 +82,8 @@ export default function Intro() {
     
   )
 }
+
+// function useSectionInView(arg0: string) {
+//     throw new Error('Function not implemented.');
+// }
 
