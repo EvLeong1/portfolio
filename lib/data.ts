@@ -1,7 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
+import { LuApple, LuDatabase, LuGraduationCap, LuKeyboard, LuLaptop, LuMusic } from "react-icons/lu";
 import acraffle1Png from "@/public/acraffle1.png";
 import acraffle2Png from "@/public/acraffle2.png";
 import prosperPng from "@/public/prosperSearch.png";
@@ -17,12 +17,12 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
     name: "Education",
     hash: "#education",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
   },
   {
     name: "Experience",
@@ -40,29 +40,52 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "BrickSpace | Coding Instructor",
-    location: "Benicia, CA",
+    title: "Coding Instructor",
+    location: "BrickSpace | Benicia, CA",
     description:
       "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2021 - 2022",
+    icon: React.createElement(LuApple),
+    date: "Jan 2021 - Aug 2022",
   },
   {
-    title: "21st Century Sounds | Software Engineer Intern",
-    location: "Pleasant Hill, CA",
+    title: "Software Engineer Intern",
+    location: "21st Century Sounds | Pleasant Hill, CA",
     description:
       "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2022",
+    icon: React.createElement(LuDatabase),
+    date: "May 2022 - Aug 2022",
   },
   {
-    title: "First American | Software Engineer Intern",
-    location: "Santa Ana, CA",
+    title: "Software Engineer Intern",
+    location: "First American | Santa Ana, CA",
     description:
-      "I completed a Software Engineer internship at First American, where I developed a full stack system for automated report generation, reduced research costs by optimizing SQL-based reporting for international teams, and created internal tools to enhance data analysis efficiency.",
-    icon: React.createElement(FaReact),
-    date: "2023 - present",
+      "I developed a full stack system for automated report generation, reduced research costs by optimizing SQL-based reporting for international teams, and created internal tools to enhance data analysis efficiency.",
+    icon: React.createElement(LuLaptop),
+    date: "Jun 2023 - present",
   },
+] as const;
+
+export const educationData = [
+  
+  {
+    title: "Diablo Valley College",
+    location: "Pleasant Hill, CA",
+    description:
+      "Associate of Science in Computer Science, 3.95 GPA",
+      courses: "Data Structures and Algorithms, Data Management Information Retrevial",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jun 2020 - May 2022",
+  },
+  {
+    title: "University of California, Irvine",
+    location: "Irvine, CA",
+    description:
+      "Bachelor of Science in Computer Science, Specialization in Information Systems",
+    courses: "Data Structures and Algorithms, Data Management Information Retrevial Bachelor of Science in Computer Science, Specialization in Information Systems",
+    icon: React.createElement(LuGraduationCap),
+    date: "Aug 2022 - Jun 2024",
+  },
+  
 ] as const;
 
 export const projectsData = [
