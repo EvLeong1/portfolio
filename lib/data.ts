@@ -43,15 +43,15 @@ export const experiencesData = [
     title: "Coding Instructor",
     location: "BrickSpace | Benicia, CA",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Instructed coding to a diverse range of K-12 students in the Benicia Unified School District, fostering strong communication and leadership abilities, while collaboratively designing computer science and problem-solving curriculum with credentialed educators.",
     icon: React.createElement(LuApple),
     date: "Jan 2021 - Aug 2022",
   },
   {
-    title: "Software Engineer Intern",
+    title: "Software Engineer Intern - Database",
     location: "21st Century Sounds | Pleasant Hill, CA",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Conducted thorough requirements analysis, utilized React for frontend development, and implemented an optimized MySQL database for client and event data storage.",
     icon: React.createElement(LuDatabase),
     date: "May 2022 - Aug 2022",
   },

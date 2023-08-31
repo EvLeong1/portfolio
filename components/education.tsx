@@ -49,8 +49,8 @@ export default function Education() {
                             
                         >
                             <h3 className="font-bold capitalize text-D697FF-500">{expItem.title}</h3>
-                            <p className=" !mt-0">{expItem.location}</p>
-                            <p className="!font-normal !mt-1 text-gray-700">{expItem.description}</p>
+                            <p className="!font-normal !mt-0">{expItem.location}</p>
+                            <p className="font-normal !mt-1 text-gray-700">{expItem.description}</p>
                             <p>Courses:</p>
                             <p className="!font-normal !mt-1 text-gray-700">{expItem.courses}</p>
                         </VerticalTimelineElement>

@@ -16,7 +16,10 @@ import exp from "constants";
 export default function Experience() {
 
     const { ref } = useSectionInView("Experience", 0.5);
-    return <section id="experience" ref={ref} className='scroll-mt-28'>
+    return <section id="experience" ref={ref} className='scroll-mt-28 '>
+        {/* <div className="bg-[#e2c5ff] -z-10 absolute 
+        h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]">
+        </div> */}
         <SectionHeading>Experience</SectionHeading>
         <VerticalTimeline  lineColor=""> 
             {

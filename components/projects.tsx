@@ -74,7 +74,7 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                                 key = {index}>{tag}</li>
                             ))}
                             {/* <a className='bg-purple-300 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white font-bold rounded-full hover:bg-green-300 hover:scale-105 transition cursor-pointer'>Details</a> */}
-                            <a className=' ml-[1%]  w-[rem] text-purple-300 text-[1.5rem] rounded-full outline-none focus:scale-110 hover:text-green-300 hover:scale-105 transition cursor-pointer'
+                            <a className=' ml-[1%]  w-[rem] text-purple-300 text-[1.5rem] rounded-full outline-none focus:scale-110 hover:text-purple-400 hover:scale-105 transition cursor-pointer'
                             href={link} target="_blank">
                                 <FaGithubSquare />
                             </a>

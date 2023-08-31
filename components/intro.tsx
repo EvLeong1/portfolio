@@ -14,9 +14,10 @@ import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
     const { ref } = useSectionInView("Home",0.5);
+    const {setActiveSection, setTimeofLastClick} = useActiveSectionContext();
   
   return (
-    <section ref = {ref} id = "home" className='max-w-[50rem] text-center sm:mb-0 scroll-mt-48'>
+    <section ref = {ref} id = "home" className='max-w-[50rem] text-center sm:mb-0 scroll-mt-48 mt-10'>
         <div className='flex items-center justify-center'>
             <div className='relative'>
                 <motion.div
@@ -53,26 +54,32 @@ export default function Intro() {
         <span className='text-slate-500 sm:text-3xl text-1xl'>Full Stack Software Engineer</span>
         </motion.h1>
 
-        <motion.div className='flex flex-col sm:flex-row font-medium items-center justify-center gap-4 px-4 text-lg drop-shadow-sm'
+        <motion.div className='sm:flex  inline-grid gap-y-5 flex-col sm:flex-row font-medium items-center justify-center gap-4 px-4 text-lg drop-shadow-sm'
             initial = {{opacity:0, y:100}}
             animate={{opacity:1, y:0}}
             transition={{delay:0.1,}}
         >
-            <a className='bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer'
+            <a className='bg-gray-900 outline-2 outline-white text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer'
             href='/Leong_Evan_Resume.pdf' target="_blank" rel="noopener noreferrer">
                 Resume 
                 {/* <HiDownload /> {" "} */}
             </a>
-            <Link href="#contact"
-            className='bg-white text-gray-700  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-100 hover:text-gray-900 active:scale-105 transition'>
+            <Link 
+            href="#contact"
+            className='bg-gray-100 outline-2 outline-gray-700 text-gray-700  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  ctive:scale-105 transition'
+            onClick={() => {
+                setActiveSection("Contact");
+                setTimeofLastClick(Date.now());
+            }}
+            >
              Contact 
             {/* <BsArrowRight />{" "} */}
             </Link>     
-            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-100 hover:text-gray-800 active:scale-105 transition cursor-pointer '
+            <a className='bg-gray-100 outline-2 outline-gray-700 p-4 text-gray-700 justify-center flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer '
             href='https://www.linkedin.com/in/evanrleong/' target="_blank">
                 <BsLinkedin />
             </a>
-            <a className='bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.25rem] rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-100 hover:text-gray-800 active:scale-105 transition cursor-pointer'
+            <a className='bg-gray-100 p-4 outline-2 outline-gray-700 text-center justify-center text-gray-700 flex items-center gap-2 text-[1.25rem] rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer'
             href='https://github.com/EvLeong1' target="_blank">
                 <FaGithubSquare />
             </a>
