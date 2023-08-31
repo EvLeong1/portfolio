@@ -59,9 +59,9 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
             <section 
             className='bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden
             sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 even:pl-8
-            hover:bg-gray-200 transition rounded-lg group-even:pl-8'>
+            hover:bg-gray-200 transition rounded-lg sm:group-even:pl-8 pl-4 '>
                 <div className='pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 
-                sm:max-w-[55%] flex flex-col h-full group-even:ml-[18rem]'>
+                sm:max-w-[55%] flex flex-col h-full sm:group-even:ml-[18rem]'>
                     
                     <h3 className='text-2xl font-semibold'>{title} </h3>
                 
@@ -88,7 +88,7 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                 
                 <Image src={imageUrl} alt={title} 
                 quality={95}
-                className='absolute top-8 -right-40
+                className='absolute hidden sm:block top-8 -right-40
                 w-[28.25rem] rounded-lg shadow-2xl 
                 transition
 
@@ -104,7 +104,26 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                 group-even:-right-[initial] 
                 group-even:-left-40'
                 />
+                
             </section>
+            <Image src={imageUrl} alt={title} 
+                quality={95}
+                className='
+                sm:hidden
+                items-center justify-center
+                object-center
+                object-cover
+                w-[100%] rounded-lg shadow-2xl 
+                transition
+                border border-2 border-black
+
+                hover:scale-[1.04]
+                transition
+
+               
+                mb-20'
+                
+                />
         </motion.div>
         
         )
