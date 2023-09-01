@@ -66,7 +66,7 @@ export default function Intro() {
             </a>
             <Link 
             href="#contact"
-            className='bg-gray-100 dark:bg-slate-500  outline-2 outline-gray-700 text-gray-700  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  ctive:scale-105 transition'
+            className='bg-gray-100 dark:bg-slate-500  dark:text-white outline-2 sm:outline-gray-700 text-gray-700  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  ctive:scale-105 transition'
             onClick={() => {
                 setActiveSection("Contact");
                 setTimeofLastClick(Date.now());
@@ -75,11 +75,11 @@ export default function Intro() {
              Contact 
             {/* <BsArrowRight />{" "} */}
             </Link>     
-            <a className='bg-gray-100 dark:bg-slate-500  outline-2 sm:outline-gray-700 p-4 text-gray-700 justify-center flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer '
+            <a className='bg-gray-100 dark:bg-slate-500 dark:text-white outline-2 sm:outline-gray-700 p-4 text-gray-700 justify-center flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer '
             href='https://www.linkedin.com/in/evanrleong/' target="_blank">
                 <BsLinkedin />
             </a>
-            <a className='bg-gray-100 dark:bg-slate-500  p-4 outline-2 sm:outline-gray-700 text-center justify-center text-gray-700 flex items-center gap-2 text-[1.25rem] rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer'
+            <a className='bg-gray-100 dark:bg-slate-500 dark:text-white p-4 outline-2 sm:outline-gray-700 text-center justify-center text-gray-700 flex items-center gap-2 text-[1.25rem] rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer'
             href='https://github.com/EvLeong1' target="_blank">
                 <FaGithubSquare />
             </a>
