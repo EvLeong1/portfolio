@@ -4,6 +4,7 @@ import { FaReact } from "react-icons/fa";
 import { LuApple, LuDatabase, LuGraduationCap, LuKeyboard, LuLaptop, LuMusic } from "react-icons/lu";
 import acraffle1Png from "@/public/acraffle1.png";
 import acraffle2Png from "@/public/acraffle2.png";
+import acraffle3Png from "@/public/acraffle3.png";
 import prosperPng from "@/public/prosperSearch.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -94,7 +95,7 @@ export const projectsData = [
     description:
     "A Python-coded Discord bot, hosted on Heroku, combines user-friendly commands and advanced search tecniques in MongoDB to offer an engaging and efficient social experience.",
     tags: ["Python", "MongoDB", "Discord API", "Heroku"],
-    imageUrl: acraffle2Png,
+    imageUrl: acraffle3Png,
     link: 'https://github.com/EvLeong1/acraffle2',
   },
   {

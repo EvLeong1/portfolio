@@ -87,7 +87,7 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                 </div>
                 
                 <Image src={imageUrl} alt={title} 
-                quality={95}
+                quality={100}
                 className='absolute hidden sm:block top-8 -right-40
                 w-[28.25rem] rounded-lg shadow-2xl 
                 transition
@@ -107,7 +107,7 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                 
             </section>
             <Image src={imageUrl} alt={title} 
-                quality={95}
+                quality={100}
                 className='
                 sm:hidden
                 items-center justify-center
