@@ -59,14 +59,14 @@ export default function Intro() {
             animate={{opacity:1, y:0}}
             transition={{delay:0.1,}}
         >
-            <a className='bg-gray-900 outline-2 outline-white text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer'
+            <a className='bg-gray-900 dark:bg-gray-200 dark:text-gray-800 outline-2 sm:outline-white text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer'
             href='/Leong_Evan_Resume.pdf' target="_blank" rel="noopener noreferrer">
                 Resume 
                 {/* <HiDownload /> {" "} */}
             </a>
             <Link 
             href="#contact"
-            className='bg-gray-100 outline-2 outline-gray-700 text-gray-700  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  ctive:scale-105 transition'
+            className='bg-gray-100 dark:bg-slate-500  outline-2 outline-gray-700 text-gray-700  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  ctive:scale-105 transition'
             onClick={() => {
                 setActiveSection("Contact");
                 setTimeofLastClick(Date.now());
@@ -75,11 +75,11 @@ export default function Intro() {
              Contact 
             {/* <BsArrowRight />{" "} */}
             </Link>     
-            <a className='bg-gray-100 outline-2 outline-gray-700 p-4 text-gray-700 justify-center flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer '
+            <a className='bg-gray-100 dark:bg-slate-500  outline-2 sm:outline-gray-700 p-4 text-gray-700 justify-center flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer '
             href='https://www.linkedin.com/in/evanrleong/' target="_blank">
                 <BsLinkedin />
             </a>
-            <a className='bg-gray-100 p-4 outline-2 outline-gray-700 text-center justify-center text-gray-700 flex items-center gap-2 text-[1.25rem] rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer'
+            <a className='bg-gray-100 dark:bg-slate-500  p-4 outline-2 sm:outline-gray-700 text-center justify-center text-gray-700 flex items-center gap-2 text-[1.25rem] rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer'
             href='https://github.com/EvLeong1' target="_blank">
                 <FaGithubSquare />
             </a>
