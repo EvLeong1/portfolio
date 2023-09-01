@@ -23,7 +23,7 @@ export default function About() {
         {/* <h2 className='text-3xl font-medium capitalize text-gray-950 mb-8'
         >About Me</h2> */}
         <SectionHeading>About Me</SectionHeading>
-        <p className='mb-3 bg-gray-100 border border-black/5 rounded-xl p-5 drop-shadow-lg'>
+        <p className='mb-3 bg-gray-100 dark:bg-slate-500 border border-black/5 rounded-xl p-5 drop-shadow-lg'>
         My name is Evan Leong and I am entering my senior year at the <span className='font-medium text-yellow-600'>University of California, Irvine</span>, 
         on the path to attain a <span className='font-medium text-yellow-600'>Bachelor of Science in Computer Science. </span>
         Prior to this, I studied at <span className='font-medium text-blue-600'>Diablo Valley College</span> and earned an <span className='font-medium text-blue-600'>Associate of Science in Computer Science,</span> achieving a 3.95 GPA. 

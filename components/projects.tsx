@@ -57,7 +57,7 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
             className='group mb-3 sm:mb-8 last:mb-0'>
 
             <section 
-            className='bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden
+            className='bg-gray-100 dark:bg-slate-500 max-w-[42rem] border border-black/5 overflow-hidden
             sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 even:pl-8
             hover:bg-gray-200 transition rounded-lg sm:group-even:pl-8 pl-4 '>
                 <div className='pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 
@@ -65,7 +65,7 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                     
                     <h3 className='text-2xl font-semibold'>{title} </h3>
                 
-                    <p className='mt-2 leading-relaxed text-gray-700'>{description}</p>
+                    <p className='mt-2 leading-relaxed text-gray-700 dark:text-gray-200'>{description}</p>
                     
                     <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
                         {
@@ -115,10 +115,10 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                 object-cover
                 w-[100%] rounded-lg shadow-2xl 
                 transition
-                border border-2 border-black
+                border-2 border-gray-500
 
                 hover:scale-[1.04]
-                transition
+                
 
                
                 mb-20'

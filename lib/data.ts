@@ -72,7 +72,7 @@ export const educationData = [
     location: "Pleasant Hill, CA",
     description:
       "Associate of Science in Computer Science, 3.95 GPA",
-      courses: "Data Structures and Algorithms, Data Management Information Retrevial",
+      courses: "Calculus I-III, Physics for Engineers A-C, Discrete Mathematics, Linear Algebra, Assembly Language Programming",
     icon: React.createElement(LuGraduationCap),
     date: "Jun 2020 - May 2022",
   },
@@ -80,8 +80,8 @@ export const educationData = [
     title: "University of California, Irvine",
     location: "Irvine, CA",
     description:
-      "Bachelor of Science in Computer Science, Specialization in Information Systems",
-    courses: "Data Structures and Algorithms, Data Management Information Retrevial Bachelor of Science in Computer Science, Specialization in Information Systems",
+      "Bachelor of Science in Computer Science, specialization in Information Systems",
+    courses: "Data Structures and Algorithms, Information Retrevial, Introduction to Data Management (SQL), Beyond SQL (NoSQL), Machine Learning and Data-Mining, System Design, Software Testing ",
     icon: React.createElement(LuGraduationCap),
     date: "Aug 2022 - Jun 2024",
   },
