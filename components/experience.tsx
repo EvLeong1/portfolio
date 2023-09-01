@@ -13,7 +13,7 @@ import exp from "constants";
 import { useTheme } from "@/context/theme-context";
 
 
-//experience section
+//experience section //
 export default function Experience() {
 
     const { ref } = useSectionInView("Experience", 0.5);
