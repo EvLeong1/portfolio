@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { motion} from 'framer-motion'
-import pfp from "@/public/acraffle3.png";
+import pfp from "@/public/pfp.JPG";
 import Link from 'next/link'
 import { BsArrowRight, BsGithub } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
