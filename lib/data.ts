@@ -93,7 +93,7 @@ export const projectsData = [
   {
     title: "ACraffle",
     description:
-    "A Python-coded Discord bot, hosted on Heroku, combines user-friendly commands and advanced search tecniques in MongoDB to offer an engaging and efficient social experience.",
+    "A Python-coded Discord bot, hosted on Heroku, combines user-friendly commands and advanced search tecniques in MongoDB to offer an engaging and efficient social experience. Used in over 1500 servers worldwide!",
     tags: ["Python", "MongoDB", "Discord API", "Heroku"],
     imageUrl: acraffle3Png,
     link: 'https://github.com/EvLeong1/acraffle2',
