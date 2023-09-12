@@ -8,7 +8,7 @@ The site is hosted with Vercel. [Visit the site here](https://evanleong.vercel.a
 To run this program first clone the the repository to your machine and run 
 `npm run dev`.
 
-## Languages, Framework, and Packagages
+## Languages, Framework, and Packages
 
 - TypeScript 
 - Next.Js 
