@@ -51,15 +51,12 @@ export default function Intro() {
         <motion.div className='bg-white rounded-lg border-gray-800 border-8  mb-[3rem] '
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            
-                
-
         >
             <motion.h1 className="mb-10 mt-[3rem] sm:leading-[4] leading-[2.5]  font-medium rounded-lg px-10"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             >                
-            <span className=' text-6xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg hover:text-yellow-400 transition cursor-default dark:text-white'
+            <span className=' text-5xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg hover:text-yellow-400 transition cursor-default dark:text-white'
             >Evan Leong </span><br></br>
             <span className='text-slate-500 sm:text-3xl text-1xl dark:text-gray-200'>Full Stack Software Engineer</span>
             </motion.h1>
