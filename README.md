@@ -10,10 +10,10 @@ To run this program first clone the the repository to your machine and run
 
 ## Languages, Framework, and Packagages
 
-TypeScript
-Next.Js
-Tailwind CSS
-Framer Motion
-React Email
-React Vertical Timeline Component
+- TypeScript 
+- Next.Js 
+- Tailwind CSS
+- Framer Motion
+- React Email
+- React Vertical Timeline Component
 
