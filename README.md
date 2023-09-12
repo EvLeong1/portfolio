@@ -1,7 +1,7 @@
 # Portfolio Website
 
 A Web Portfolio made by myself to showcase my experience, education, and some personal projects.
-The site is hosted with Vercel. [Visit the site here](temp)
+The site is hosted with Vercel. [Visit the site here](https://evanleong.vercel.app/)
 
 ## Running
 
