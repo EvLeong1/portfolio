@@ -6,7 +6,11 @@ import acraffle1Png from "@/public/acraffle1.png";
 import acraffle2Png from "@/public/acraffle2.png";
 import acraffle3Png from "@/public/acraffle3.png";
 import prosperPng from "@/public/prosperSearch.png";
+import uciPng from "@/public/uci.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
+
+
+
 
 export const links = [
   {
@@ -75,6 +79,7 @@ export const educationData = [
       "Associate of Science in Computer Science, 3.95 GPA",
       courses: "Calculus I-III, Physics for Engineers A-C, Discrete Mathematics, Linear Algebra, Assembly Language Programming",
     icon: React.createElement(LuGraduationCap),
+    pic: uciPng,
     date: "Jun 2020 - May 2022",
   },
   {
@@ -84,6 +89,7 @@ export const educationData = [
       "Bachelor of Science in Computer Science, specialization in Information Systems",
     courses: "Data Structures and Algorithms, Information Retrevial, Introduction to Data Management (SQL), Beyond SQL (NoSQL), Machine Learning and Data-Mining, System Design, Software Testing ",
     icon: React.createElement(LuGraduationCap),
+    pic: uciPng,
     date: "Aug 2022 - Jun 2024",
   },
   

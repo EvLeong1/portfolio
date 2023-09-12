@@ -13,3 +13,24 @@
   html{
     --line-color: #d3d3d3;
   }
+
+
+/* Add these CSS styles to your stylesheet
+@keyframes growShrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to your motion-background element 
+.motion-background {
+  animation: growShrink 4s infinite;
+}
+
+*/

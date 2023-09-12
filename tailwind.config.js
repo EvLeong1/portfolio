@@ -15,6 +15,7 @@ module.exports = {
       fontFamily:{
         PlayfairDisplay: ['Playfair Display', 'serif'],
       },
+      
     },
   },
   plugins: [],

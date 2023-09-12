@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from 'react'
 import Image from 'next/image'
-import { motion} from 'framer-motion'
+import { motion, useAnimation} from 'framer-motion'
 import pfp from "@/public/pfp.png";
 import Link from 'next/link'
 import { BsArrowRight, BsGithub } from 'react-icons/bs';
@@ -11,6 +11,8 @@ import { FaGithubSquare } from 'react-icons/fa';
 import { useActiveSectionContext } from '@/context/active-section-context';
 import { useInView } from 'react-intersection-observer';
 import { useSectionInView } from '@/lib/hooks';
+
+
 
 export default function Intro() {
     const { ref } = useSectionInView("Home",0.5);
@@ -29,30 +31,41 @@ export default function Intro() {
                         
                     }}
                 >
-                    <Image 
+                    {/* <Image 
                         src= {pfp}
                         alt="Evan profile picture" 
                         width="200"
                         height="200"
                         quality="95"
                         priority={true}
-                        className="h-24 w-24 rounded-full 
-                        object-cover border-[0.1rem] border-white scale-150
+                        className="h-32 w-32 rounded-lg 
+                        object-cover border-[0.1rem] border-white scale-150 mb-[1rem]
                         shadow-xl"// hover:border-[#7762ffda] transition duration-300 ease-in-out"
-                    />
+                    /> */}
                 </motion.div>
                 
             </div>
 
         </div>
+        
+        <motion.div className='bg-white rounded-lg border-gray-800 border-8  mb-[3rem] '
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            
+                
 
-        <motion.h1 className="mb-10 mt-[3rem] px-4 sm:leading-[4] leading-[2.5]  font-medium"
-        initial = {{opacity:0, y:100}}
-        animate={{opacity:1, y:0}}>
-        <span className=' text-6xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg hover:text-gray-700 transition cursor-default dark:text-white'
-        >Evan Leong </span><br></br>
-        <span className='text-slate-500 sm:text-3xl text-1xl dark:text-gray-200'>Full Stack Software Engineer</span>
-        </motion.h1>
+        >
+            <motion.h1 className="mb-10 mt-[3rem] sm:leading-[4] leading-[2.5]  font-medium rounded-lg px-10"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            >                
+            <span className=' text-6xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg hover:text-yellow-400 transition cursor-default dark:text-white'
+            >Evan Leong </span><br></br>
+            <span className='text-slate-500 sm:text-3xl text-1xl dark:text-gray-200'>Full Stack Software Engineer</span>
+            </motion.h1>
+        </motion.div>
+        
+       
 
         <motion.div className='sm:flex  inline-grid gap-y-5 flex-col sm:flex-row font-medium items-center justify-center gap-4 px-4 text-lg drop-shadow-sm'
             initial = {{opacity:0, y:100}}
