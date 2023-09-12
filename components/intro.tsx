@@ -48,7 +48,7 @@ export default function Intro() {
 
         </div>
         
-        <motion.div className='bg-white rounded-lg border-gray-800 border-8  mb-[3rem] flex items-center justify-center'
+        <motion.div className='bg-white rounded-lg border-gray-800 dark:bg-slate-600 dark:border-white border-8  mb-[3rem] flex items-center justify-center'
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
         >
@@ -59,7 +59,7 @@ export default function Intro() {
             <span className=' text-5xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg hover:text-yellow-400 transition cursor-default dark:text-white'
             >Evan Leong </span>
             <motion.div 
-            className='my-[1rem] w-[50%] h-[0.25rem] bg-gray-800 items-center justify-center mx-auto rounded-full'
+            className='my-[1rem] w-[50%] h-[0.25rem] dark:bg-white bg-gray-800 items-center justify-center mx-auto rounded-full'
             initial={{x: 0}}
             animate={{x: [-5,5]}}
             transition={{repeat: Infinity, duration: 1, repeatType: "reverse", ease: "easeInOut"}}
