@@ -4,9 +4,10 @@ import { FaReact } from "react-icons/fa";
 import { LuApple, LuDatabase, LuGraduationCap, LuKeyboard, LuLaptop, LuMusic } from "react-icons/lu";
 import acraffle1Png from "@/public/acraffle1.png";
 import acraffle2Png from "@/public/acraffle2.png";
-import acraffle3Png from "@/public/acraffle3.png";
+import acraffle3Png from "@/public/acraffle4.png";
 import prosperPng from "@/public/prosperSearch.png";
 import uciPng from "@/public/uci.png";
+import lardchatPng from "@/public/lardchat.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 
 
@@ -105,6 +106,15 @@ export const projectsData = [
     link: 'https://github.com/EvLeong1/acraffle2',
   },
   {
+    title: "Lard Chat",
+    description:
+      "A real-time chat application built with React, Firebase, Tailwind CSS, and hosted on Vercel, featuring email authentication, a live chatroom, and a user-friendly UI.",
+    tags: ["JavaScript", "React", "Firebase", "Tailwind CSS", "Vercel"],
+    imageUrl: lardchatPng,
+    link: 'https://github.com/EvLeong1/chat-app',
+    //site: 'https://lardchat.vercel.app/',
+  },
+  {
     title: "ProsperSearch",
     description:
       " An AI-powered search engine made with Python using the OpenAI API for site summaries, tf-idf ranking, and a user-friendly Flask web GUI, achieving sub-150 ms query responses.",
@@ -112,13 +122,8 @@ export const projectsData = [
     imageUrl: prosperPng,
     link: 'https://github.com/EvLeong1/prosperSearchEngine',
   },
-  // {
-  //   title: "Word Analytics",
-  //   description:
-  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-  //   // imageUrl: wordanalyticsImg,
-  // },
+  
+  
 ] as const;
 
 export const skillsData = [
