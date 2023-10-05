@@ -73,15 +73,15 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                     
                     <ul className='flex flex-wrap mt-4 gap-2 sm:mt-auto'>
                         {
-                            tags.map((tag, index) => (
-                                <li className = 'bg-blue-300 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default' 
-                                key = {index}>{tag}</li>
-                            ))}
-                            {/* <a className='bg-purple-300 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white font-bold rounded-full hover:bg-green-300 hover:scale-105 transition cursor-pointer'>Details</a> */}
-                            <a className=' ml-[1%]  w-[rem] text-purple-300 text-[1.5rem] rounded-full outline-none focus:scale-110 hover:text-purple-400 hover:scale-105 transition cursor-pointer'
-                            href={link} target="_blank">
-                                <FaGithubSquare />
-                            </a>
+                        tags.map((tag, index) => (
+                            <li className = 'bg-blue-300 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default' 
+                            key = {index}>{tag}</li>
+                        ))}
+                        {/* <a className='bg-purple-300 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white font-bold rounded-full hover:bg-green-300 hover:scale-105 transition cursor-pointer'>Details</a> */}
+                        <a className=' ml-[1%]  w-[rem] text-purple-300 text-[1.5rem] rounded-full outline-none focus:scale-110 hover:text-purple-400 hover:scale-105 transition cursor-pointer'
+                        href={link} target="_blank">
+                            <FaGithubSquare />
+                        </a>
                             
                             
                     </ul>

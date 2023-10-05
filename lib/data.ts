@@ -52,6 +52,7 @@ export const experiencesData = [
       "Instructed coding to a diverse range of K-12 students in the Benicia Unified School District, fostering strong communication and leadership abilities, while collaboratively designing computer science and problem-solving curriculum with credentialed educators.",
     icon: React.createElement(LuApple),
     date: "Jan 2021 - Aug 2022",
+    tags: ["Python", "Scratch", "Teaching"],
   },
   {
     title: "Software Engineer Intern - Database",
@@ -60,6 +61,8 @@ export const experiencesData = [
       "Conducted thorough requirements analysis, utilized React for frontend development, and implemented an optimized MySQL database for client and event data storage.",
     icon: React.createElement(LuDatabase),
     date: "May 2022 - Aug 2022",
+    tags: ["React", "MySQL", "Requirements Analysis", "Client Outreach"],
+
   },
   {
     title: "Software Engineer Intern",
@@ -68,6 +71,17 @@ export const experiencesData = [
       "I developed a full stack system for automated report generation, reduced research costs by optimizing SQL-based reporting for international teams, and created internal tools to enhance data analysis efficiency.",
     icon: React.createElement(LuLaptop),
     date: "Jun 2023 - present",
+    tags: ["C#", ".NET", "MS SQL Server", "Hue"],
+
+  },
+  {
+    title: "Associate Systems Developer",
+    location: "First American | Santa Ana, CA",
+    description:
+      "Continuing work on previously implemented full stack system with focus on creating a user friendly system that allows employees to access reports in one central location",
+    icon: React.createElement(LuLaptop),
+    date: "Jun 2023 - present",
+    tags: ["C#", ".NET", "MS SQL Server", "Hue"],
   },
 ] as const;
 
