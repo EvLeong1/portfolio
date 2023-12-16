@@ -40,16 +40,16 @@ export default function Education() {
                             contentStyle={{ 
                                 background: theme === 'light' ? "#FDFBFF" : "#64748B", 
                                 color: theme === 'light' ? "black" : "white", 
-                                border: theme === 'light' ? "2px solid #D697FF" : "2px solid #542375", 
+                                border: theme === 'dark' ? "2px solid #D697FF" : "2px solid #542375", 
                                 boxShadow:"none", textAlign:"left", padding:"1.3rem 2rem"}}
-                            contentArrowStyle={{ borderRight: theme === 'light' ? "0.4rem solid #D697FF" : "0.4rem solid #542375" }}
+                            contentArrowStyle={{ borderRight: theme === 'dark' ? "0.4rem solid #D697FF" : "0.4rem solid #542375" }}
                             date={expItem.date}
                             icon={expItem.icon}
                             iconStyle={{
                                 background: theme === 'light' ? "#FDFBFF" : "#64748B",
                                 fontSize: "1.5rem",
-                                color: theme === 'light' ? "#D697FF" : "#542375", // "#D697FF",
-                                boxShadow: theme === 'light' ? "0 0 0 0.3rem #D697FF" : "0 0 0 0.3rem #542375",
+                                color: theme === 'dark' ? "#D697FF" : "#542375", // "#D697FF",
+                                boxShadow: theme === 'dark' ? "0 0 0 0.3rem #D697FF" : "0 0 0 0.3rem #542375",
                                 }}
                             
                         >

@@ -32,16 +32,16 @@ export default function Experience() {
                             contentStyle={{ 
                                 background: theme === 'light' ? "#FDFBFF" : "#64748B", 
                                 color: theme === 'light' ? "black" : "white", 
-                                border:"2px solid #A6F9FF", 
+                                border:theme === 'light' ? "2px solid #000D61" : "2px solid #A6F9FF", 
                                 boxShadow:"none", textAlign:"left", padding:"1.3rem 2rem"}}
-                            contentArrowStyle={{ borderRight: "0.4rem solid  #A6F9FF" }}
+                            contentArrowStyle={{ borderRight: theme === 'light' ? "0.4rem solid #000D61" : "0.4rem solid  #A6F9FF" }}
                             date={expItem.date}
                             icon={expItem.icon}
                             iconStyle={{
                                 background: theme === 'light' ? "#FDFBFF" : "#64748B",
                                 fontSize: "1.5rem",
-                                color: "#A6F9FF",
-                                boxShadow: "0 0 0 0.3rem #A6F9FF",
+                                color: theme === 'light' ? "#000D61" : "#A6F9FF",
+                                boxShadow: theme === 'light' ? "0 0 0 0.3rem #000D61" : "0 0 0 0.3rem #A6F9FF",
                                 }}
                             
                         >
