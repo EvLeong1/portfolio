@@ -61,7 +61,7 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
             sm:pr-8 relative sm:h-[26rem] mb-3 sm:mb-8 last:mb-0 even:pl-8
             hover:bg-[#D3C9B8] transition rounded-lg sm:group-even:pl-8 pl-4 '>
                 <div className='pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 
-                sm:max-w-[55%] flex flex-col h-full sm:group-even:ml-[18rem] justify-center '>
+                sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[18rem] justify-center '>
                     
                     <h3 className='text-2xl font-semibold'>{title} </h3>
                 
