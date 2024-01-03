@@ -30,28 +30,28 @@ export default function Experience() {
                     <React.Fragment key={index}>
                         <VerticalTimelineElement
                             contentStyle={{ 
-                                background: theme === 'light' ? "#FDFBFF" : "#64748B", 
+                                background: theme === 'light' ? "#E5D9C5" : "#64748B", 
                                 color: theme === 'light' ? "black" : "white", 
-                                border:theme === 'light' ? "2px solid #000D61" : "2px solid #A6F9FF", 
+                                border:theme === 'light' ? "2px solid #7F1D1D" : "2px solid #FEF08A", 
                                 boxShadow:"none", textAlign:"left", padding:"1.3rem 2rem"}}
-                            contentArrowStyle={{ borderRight: theme === 'light' ? "0.4rem solid #000D61" : "0.4rem solid  #A6F9FF" }}
+                            contentArrowStyle={{ borderRight: theme === 'light' ? "0.4rem solid #7F1D1D" : "0.4rem solid  #FEF08A" }}
                             date={expItem.date}
                             icon={expItem.icon}
                             iconStyle={{
-                                background: theme === 'light' ? "#FDFBFF" : "#64748B",
+                                background: theme === 'light' ? "#E5D9C5" : "#64748B",
                                 fontSize: "1.5rem",
-                                color: theme === 'light' ? "#000D61" : "#A6F9FF",
-                                boxShadow: theme === 'light' ? "0 0 0 0.3rem #000D61" : "0 0 0 0.3rem #A6F9FF",
+                                color: theme === 'light' ? "#7F1D1D" : "#FEF08A",
+                                boxShadow: theme === 'light' ? "0 0 0 0.3rem #7F1D1D" : "0 0 0 0.3rem #FEF08A",
                                 }}
                             
                         >
                             <h3 className="font-bold capitalize text-D697FF-500 text-2xl">{expItem.title}</h3>
                             <p className="font-normal !mt-0 dark:text-gray-200 text-xl ">{expItem.location}</p>
-                            <p className="font-normal  text-gray-700 dark:text-gray-300">{expItem.description}</p>
+                            <p className="font-normal  text-gray-800 dark:text-gray-300">{expItem.description}</p>
                             <div className="flex flex-wrap w-[100%] gap-2 mt-[1rem] items-center">
                                 {
                                 expItem.tags.map((tag, index) => (
-                                    <li className = 'bg-blue-900 px-3 py-1  text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default list-none' 
+                                    <li className = 'bg-red-900/90 dark:bg-[#FEF08A] dark:text-black px-3 py-1  text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default list-none' 
                                     key = {index}>{tag}</li>
                                 ))}
 

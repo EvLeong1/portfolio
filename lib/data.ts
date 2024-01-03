@@ -91,17 +91,17 @@ export const educationData = [
     title: "Diablo Valley College",
     location: "Pleasant Hill, CA",
     description:
-      "Associate of Science in Computer Science, 3.95 GPA",
+      "Computer Science, A.S. | GPA: 3.95",
       courses: "Calculus I-III, Physics for Engineers A-C, Discrete Mathematics, Linear Algebra, Assembly Language Programming",
     icon: React.createElement(LuGraduationCap),
     pic: uciPng,
     date: "Jun 2020 - May 2022",
   },
   {
-    title: "University of California, Irvine",
+    title: "UC Irvine",
     location: "Irvine, CA",
     description:
-      "Bachelor of Science in Computer Science, 3.85 GPA",
+      "Computer Science, B.S. | GPA: 3.84",
     courses: "Data Structures and Algorithms, Information Retrevial, Introduction to Data Management (SQL), Beyond SQL (NoSQL), Machine Learning and Data-Mining, System Design, Software Testing ",
     icon: React.createElement(LuGraduationCap),
     pic: uciPng,
@@ -114,7 +114,7 @@ export const projectsData = [
   {
     title: "ACraffle",
     description:
-    "A Python-coded Discord bot, hosted on Heroku, combines user-friendly commands and advanced search tecniques in MongoDB to offer an engaging and efficient social experience. Used in over 1500 servers worldwide!",
+    "A Python-coded Discord bot, hosted on Heroku, combines user-friendly commands and advanced search techniques in MongoDB to offer an engaging and efficient social experience. Used in over 1500 servers worldwide!",
     tags: ["Python", "MongoDB", "Discord API", "Heroku"],
     imageUrl: acraffle3Png,
     link: 'https://github.com/EvLeong1/acraffle2',

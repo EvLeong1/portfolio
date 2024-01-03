@@ -38,24 +38,24 @@ export default function Education() {
                     <React.Fragment key={index}>
                         <VerticalTimelineElement
                             contentStyle={{ 
-                                background: theme === 'light' ? "#FDFBFF" : "#64748B", 
+                                background: theme === 'light' ? "#E5D9C5" : "#64748B", 
                                 color: theme === 'light' ? "black" : "white", 
-                                border: theme === 'dark' ? "2px solid #D697FF" : "2px solid #000D61", 
+                                border: theme === 'dark' ? "2px solid #FEF08A" : "2px solid #7F1D1D", 
                                 boxShadow:"none", textAlign:"left", padding:"1.3rem 2rem"}}
-                            contentArrowStyle={{ borderRight: theme === 'dark' ? "0.4rem solid #D697FF" : "0.4rem solid #000D61" }}
+                            contentArrowStyle={{ borderRight: theme === 'dark' ? "0.4rem solid #FEF08A" : "0.4rem solid #7F1D1D" }}
                             date={expItem.date}
                             icon={expItem.icon}
                             iconStyle={{
-                                background: theme === 'light' ? "#FDFBFF" : "#64748B",
+                                background: theme === 'light' ? "#E5D9C5" : "#64748B",
                                 fontSize: "1.5rem",
-                                color: theme === 'dark' ? "#D697FF" : "#000D61", // "#D697FF",
-                                boxShadow: theme === 'dark' ? "0 0 0 0.3rem #D697FF" : "0 0 0 0.3rem #000D61",
+                                color: theme === 'dark' ? "#FEF08A" : "#7F1D1D", // "#D697FF",
+                                boxShadow: theme === 'dark' ? "0 0 0 0.3rem #FEF08A" : "0 0 0 0.3rem #7F1D1D",
                                 }}
                             
                         >
                             <h3 className="font-bold capitalize text-D697FF-500 text-2xl">{expItem.title}</h3>
                             <p className="!font-normal !mt-0">{expItem.location}</p>
-                            <p className="font-normal !mt-1 text-gray-700 dark:text-gray-300">{expItem.description}</p>
+                            <p className="font-normal !mt-1 text-gray-800 dark:text-gray-300">{expItem.description}</p>
                             <p>Relavent Coursework:</p>
                             <p className="!font-normal !mt-1 text-gray-700 dark:text-gray-300">{expItem.courses}</p>
                         </VerticalTimelineElement>
