@@ -50,7 +50,7 @@ export default function Header() {
                                 {link.name}
                             {
                                 link.name === activeSection && (<motion.span 
-                                                        className='bg-white dark:bg-gray-600 rounded-full absolute inset-0 -z-10'
+                                                        className='bg-[#ADA393] dark:bg-gray-600 rounded-full absolute inset-0 -z-10'
                                                         layoutId="activeSection"
                                                         transition={{
                                                             type: "spring",
