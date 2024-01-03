@@ -4,7 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Poppins:wght@500&family=Ubuntu+Mono&display=swap');
 
 .darker-drop-shadow {
     filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.381));
@@ -12,6 +14,8 @@
 
   html{
     --line-color: #d3d3d3;
+    font-family: 'Unbuntu+Mono',monospace;
+    /* font-family: 'Poppins', sans-serif; */
   }
 
 

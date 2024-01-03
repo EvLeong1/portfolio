@@ -14,6 +14,8 @@ module.exports = {
       },
       fontFamily:{
         PlayfairDisplay: ['Playfair Display', 'serif'],
+        Poppins: ['Poppins', 'sans-serif'],
+        UnbuntoMono: ['Ubuntu Mono', 'monospace'],
       },
       
     },

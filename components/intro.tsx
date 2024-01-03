@@ -19,7 +19,7 @@ export default function Intro() {
     const {setActiveSection, setTimeofLastClick} = useActiveSectionContext();
   
   return (
-    <section ref={ref} id="home" className='max-w-[60%] text-center sm:mb-0 scroll-mt-48 mt-10'>
+    <section ref={ref} id="home" className='max-w-[80%] sm:w-[50%] text-center sm:mb-0 scroll-mt-48 mt-10'>
     <div className='flex items-center justify-center'>
         <div className='relative'>
             <motion.div
@@ -38,22 +38,22 @@ export default function Intro() {
     
 
     {/* White box */}
-    <motion.div className='bg-white rounded-xl shadow-2xl shadow-black/50 border-gray-800 dark:bg-slate-600 dark:border-white border-2 mb-[3rem] flex items-center justify-center relative'>
+    <motion.div className=' rounded-xl shadow-2xl shadow-black/50 border-gray-800 dark:bg-slate-600 dark:border-white border-2 mb-[3rem] flex items-center justify-center relative'>
         <motion.h1
             className="mb-10 mt-[3rem] sm:leading-[4] leading-[2.5] font-medium rounded-lg px-10"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
         >
-            <span className='text-5xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg transition cursor-default dark:text-white'>
+            <span className='font-UnbuntoMono text-5xl sm:text-8xl font-extrabold text-stroke-white text-gray-900 drop-shadow-lg transition cursor-default dark:text-white'>
                 Evan Leong
             </span>
             <motion.div
-                className='my-[1rem] w-[50%] h-[0.25rem] dark:bg-white bg-gray-800 items-center justify-center mx-auto rounded-full'
+                className='my-[1rem] w-[80%] h-[0.25rem] dark:bg-white bg-gray-800 items-center justify-center mx-auto rounded-full'
                 initial={{ x: 0 }}
                 animate={{ x: [-5, 5] }}
                 transition={{ repeat: Infinity, duration: 1, repeatType: "reverse", ease: "easeInOut" }}
             ></motion.div>
-            <span className='text-slate-500 sm:text-3xl text-1xl dark:text-gray-200'>Full Stack Software Engineer</span>
+            <span className='text-slate-800 sm:text-3xl text-1xl dark:text-gray-200 font-UnbuntoMono'>Full Stack Software Engineer</span>
         </motion.h1>
     </motion.div>
 
@@ -65,7 +65,7 @@ export default function Intro() {
             animate={{opacity:1, y:0}}
             transition={{delay:0.1,}}
         >
-            <a className='bg-gray-900 dark:bg-gray-200 dark:text-gray-800 outline-2 sm:outline-white text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer'
+            <a className='font-UnbuntoMono bg-gray-900 dark:bg-gray-200 dark:text-gray-800 outline-2 sm:outline-white text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer'
             href='/Leong_Evan_Resume.pdf' target="_blank" rel="noopener noreferrer">
                 Resume 
                 {/* <HiDownload /> {" "} */}

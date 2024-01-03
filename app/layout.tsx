@@ -20,18 +20,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='!scroll-smooth bg-gradient-to-r bg-blue-200' >
+    <html lang="en" className='!scroll-smooth bg-gradient-to-r bg-[#FDFDE6] dark:bg-gray-900' >
       <body className={`${inter.className
-        }bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 font dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        }bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 font dark:bg-gray-800 dark:text-gray-50 dark:text-opacity-90`}
       >
-        {/* <div className="bg-[#e2c5ff] dark:bg-white -z-10 absolute top-[-6rem] right-[11rem] 
-        h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]">
-        </div>
-        <div className="bg-[#cbfcfd] dark:bg-white -z-10 absolute top-[-1rem] left-[-35rem] 
-        h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem]
-        xl:left[-15rem] 2xl:left-[-5rem]">
-        </div> */}
-        {/* e9c5ff */}
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <Header />

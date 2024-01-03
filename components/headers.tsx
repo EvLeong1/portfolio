@@ -16,7 +16,7 @@ export default function Header() {
     return (<header className="z-[999] relative">
     
     <motion.div className="fixed top-0 left-1/2 h-[4.5rem]  
-    border border-white dark:border-gray-700 border-opacity-40 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-80
+    border border-black dark:border-gray-700 border-opacity-40 bg-[#E5D9C5] dark:bg-gray-900 dark:bg-opacity-95 bg-opacity-95
     shadow-lg shadow-black/[0.05] backdrop:blur-[0.5rem]
     sm:top-6 sm:h-[3.25rem] sm:w-[44rem] sm:rounded-full rounded-full mt-4 w-[90%]" //changed sm:w to 44rem instead of default to add Education Tab
     initial={{y: -100, x: "-50%", opacity: 0}}
@@ -50,7 +50,7 @@ export default function Header() {
                                 {link.name}
                             {
                                 link.name === activeSection && (<motion.span 
-                                                        className='bg-gray-300 dark:bg-gray-600 rounded-full absolute inset-0 -z-10'
+                                                        className='bg-white dark:bg-gray-600 rounded-full absolute inset-0 -z-10'
                                                         layoutId="activeSection"
                                                         transition={{
                                                             type: "spring",
