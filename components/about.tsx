@@ -27,7 +27,7 @@ export default function About() {
         <div className='w-full flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-end mb-10'>
           <SectionHeading>About Me</SectionHeading>
           <div className="relative inline-block">
-            <div className=" absolute top-5 left-5 bg-[#C6B982] dark:bg-white w-full h-full shadow-md z-10 rounded-lg"></div>
+            <div className=" absolute top-5 left-5 bg-[#C6B982] dark:bg-[#0F172A] w-full h-full shadow-md z-10 rounded-lg"></div>
             <Image 
                 src={pfp}
                 alt="Evan profile picture" 

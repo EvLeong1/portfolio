@@ -13,7 +13,7 @@ import { useSectionInView } from '@/lib/hooks';
 
 
 export default function Projects() {
-    const { ref } = useSectionInView("Projects", 0.5);
+    const { ref } = useSectionInView("Projects", 0.1);
   
 
   return (
@@ -57,7 +57,7 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
             className='group mb-3 sm:mb-8 last:mb-0'>
 
             <section 
-            className='bg-[#E5D9C5] dark:bg-slate-500 max-w-[60rem] border border-black/5 overflow-hidden
+            className='bg-[#E5D9C5] dark:bg-slate-900 max-w-[60rem] border border-black/5 overflow-hidden
             sm:pr-8 relative sm:h-[26rem] mb-3 sm:mb-8 last:mb-0 even:pl-8
             hover:bg-[#D3C9B8] transition rounded-lg sm:group-even:pl-8 pl-4 '>
                 <div className='pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 
@@ -66,7 +66,7 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                     <h3 className='text-2xl font-semibold'>{title} </h3>
                 
                     <p className='mt-2 leading-relaxed text-gray-700 dark:text-gray-200'>{description}</p>
-                    {title === "Lard Chat" && <a className=' ml-[1%]  w-[rem] text-red-900/90 text-sm rounded-full outline-none  hover:text-red-950 italic transition cursor-pointer'
+                    {title === "Lard Chat" && <a className=' ml-[1%]  w-[rem] dark:text-yellow-200 text-red-900/90 text-sm rounded-full outline-none  hover:text-red-950 italic transition cursor-pointer'
                         href={'https://lardchat.vercel.app/'} target="_blank">
                             Check it out here!
                     </a>}
@@ -74,11 +74,11 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                     <ul className='flex flex-wrap mt-4 gap-2 '>
                         {
                         tags.map((tag, index) => (
-                            <li className = 'bg-red-900/90 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default' 
+                            <li className = 'bg-red-900/90 dark:bg-yellow-200 dark:text-slate-900 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default' 
                             key = {index}>{tag}</li>
                         ))}
                         {/* <a className='bg-purple-300 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white font-bold rounded-full hover:bg-green-300 hover:scale-105 transition cursor-pointer'>Details</a> */}
-                        <a className=' ml-[1%]  w-[rem] text-black text-[1.5rem] rounded-full outline-none focus:scale-110 hover:text-black/90 hover:scale-105 transition cursor-pointer'
+                        <a className=' ml-[1%]  w-[rem] text-black dark:text-gray-300 text-[1.5rem] rounded-full outline-none focus:scale-110 dark:hover:text-gray-400 hover:text-black/90  transition cursor-pointer'
                         href={link} target="_blank">
                             <FaGithubSquare />
                         </a>
