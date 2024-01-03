@@ -80,7 +80,7 @@ export const experiencesData = [
     description:
       "Developed a user facing report archive system with TypeScript frontend utilizing jQuery, connected to a C# and MS SQL Server backend as a full stack engineer. Focused on creating an adaptive, responsive, and highly accessible user interface using Kendo UI",
     icon: React.createElement(LuLaptop),
-    date: "Jun 2023 - present",
+    date: "Oct 2023 - present",
     tags: ["TypeScript", "jQuery", "C#", "MS SQL Server", "SQL"],
   },
 ] as const;
