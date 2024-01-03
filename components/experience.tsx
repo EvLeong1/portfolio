@@ -32,16 +32,16 @@ export default function Experience() {
                             contentStyle={{ 
                                 background: theme === 'light' ? "#E5D9C5" : "#0F172A", 
                                 color: theme === 'light' ? "black" : "white", 
-                                border:theme === 'light' ? "2px solid #7F1D1D" : "2px solid #FEF08A", 
+                                border:theme === 'light' ? "2px solid #7F1D1D" : "2px solid #FFF", 
                                 boxShadow:"none", textAlign:"left", padding:"1.3rem 2rem"}}
-                            contentArrowStyle={{ borderRight: theme === 'light' ? "0.4rem solid #7F1D1D" : "0.4rem solid  #FEF08A" }}
+                            contentArrowStyle={{ borderRight: theme === 'light' ? "0.4rem solid #7F1D1D" : "0.4rem solid  #FFF" }}
                             date={expItem.date}
                             icon={expItem.icon}
                             iconStyle={{
                                 background: theme === 'light' ? "#E5D9C5" : "#0F172A",
                                 fontSize: "1.5rem",
-                                color: theme === 'light' ? "#7F1D1D" : "#FEF08A",
-                                boxShadow: theme === 'light' ? "0 0 0 0.3rem #7F1D1D" : "0 0 0 0.3rem #FEF08A",
+                                color: theme === 'light' ? "#7F1D1D" : "#FFF",
+                                boxShadow: theme === 'light' ? "0 0 0 0.3rem #7F1D1D" : "0 0 0 0.3rem #FFF",
                                 }}
                             
                         >
@@ -51,7 +51,7 @@ export default function Experience() {
                             <div className="flex flex-wrap w-[100%] gap-2 mt-[1rem] items-center">
                                 {
                                 expItem.tags.map((tag, index) => (
-                                    <li className = 'bg-red-900/90 dark:bg-[#FEF08A] dark:text-black px-3 py-1  text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default list-none' 
+                                    <li className = 'bg-red-900/90 dark:bg-white dark:text-black px-3 py-1  text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default list-none' 
                                     key = {index}>{tag}</li>
                                 ))}
 

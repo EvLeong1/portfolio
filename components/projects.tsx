@@ -74,7 +74,7 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                     <ul className='flex flex-wrap mt-4 gap-2 '>
                         {
                         tags.map((tag, index) => (
-                            <li className = 'bg-red-900/90 dark:bg-yellow-200 dark:text-slate-900 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default' 
+                            <li className = 'bg-red-900/90 dark:bg-white dark:text-slate-900 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default' 
                             key = {index}>{tag}</li>
                         ))}
                         {/* <a className='bg-purple-300 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white font-bold rounded-full hover:bg-green-300 hover:scale-105 transition cursor-pointer'>Details</a> */}
