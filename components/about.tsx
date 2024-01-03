@@ -26,7 +26,7 @@ export default function About() {
       
         {/* <h2 className='text-3xl font-medium capitalize text-gray-950 mb-8'
         >About Me</h2> */}
-        <div className='w-full flex flex-row justify-between items-end'>
+        <div className='w-full flex flex-col sm:flex-row justify-center sm:justify-between items-center sm:items-end mb-10'>
           <SectionHeading>About Me</SectionHeading>
           <div className="relative inline-block">
             <div className=" absolute top-5 left-5 bg-[#C6B982] dark:bg-white w-full h-full shadow-md z-10 rounded-lg"></div>
