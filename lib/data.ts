@@ -52,36 +52,36 @@ export const experiencesData = [
       "Instructed coding to a diverse range of K-12 students in the Benicia Unified School District, fostering strong communication and leadership abilities, while collaboratively designing computer science and problem-solving curriculum with credentialed educators.",
     icon: React.createElement(LuApple),
     date: "Jan 2021 - Aug 2022",
-    tags: ["Python", "Scratch", "Teaching"],
+    tags: ["Python", "Leadership", "Teaching"],
   },
   {
-    title: "Software Engineer Intern - Database",
+    title: "Software Engineer Intern",
     location: "21st Century Sounds | Pleasant Hill, CA",
     description:
-      "Conducted thorough requirements analysis, utilized React for frontend development, and implemented an optimized MySQL database for client and event data storage.",
+      "Contributed to frontend development for a website using Node.js/ JavaScript. Also conducted requirements gathering through client outreach and MongoDB database to store client information",
     icon: React.createElement(LuDatabase),
     date: "May 2022 - Aug 2022",
-    tags: ["React", "MySQL", "Requirements Analysis", "Client Outreach"],
+    tags: ["Node.js", "JavaScript", "MongoDB", "Requirements Analysis", "Client Outreach"],
 
   },
   {
     title: "Software Engineer Intern",
     location: "First American | Santa Ana, CA",
     description:
-      "I developed a full stack system for automated report generation, reduced research costs by optimizing SQL-based reporting for international teams, and created internal tools to enhance data analysis efficiency.",
+      "Contributed to a custom-built data analyticstool using the .NET framework, C#, LINQ, and MS SQL Server as a backend engineer. Also generated reports for international teams using SQL through Hue and Apache Impala",
     icon: React.createElement(LuLaptop),
-    date: "Jun 2023 - present",
-    tags: ["C#", ".NET", "MS SQL Server", "Hue"],
+    date: "Jun 2023 - Aug 2023",
+    tags: ["C#", ".NET", "SQL", "MS SQL Server", "Hue"],
 
   },
   {
     title: "Associate Systems Developer",
     location: "First American | Santa Ana, CA",
     description:
-      "Continuing work on previously implemented full stack system with focus on creating a user friendly system that allows employees to access reports in one central location",
+      "Developed a user facing report archive system with TypeScript frontend utilizing jQuery, connected to a C# and MS SQL Server backend as a full stack engineer. Focused on creating an adaptive, responsive, and highly accessible user interface using Kendo UI",
     icon: React.createElement(LuLaptop),
     date: "Jun 2023 - present",
-    tags: ["C#", ".NET", "MS SQL Server", "Hue"],
+    tags: ["TypeScript", "jQuery", "C#", "MS SQL Server", "SQL"],
   },
 ] as const;
 
@@ -101,7 +101,7 @@ export const educationData = [
     title: "University of California, Irvine",
     location: "Irvine, CA",
     description:
-      "Bachelor of Science in Computer Science, specialization in Information Systems",
+      "Bachelor of Science in Computer Science, 3.85 GPA",
     courses: "Data Structures and Algorithms, Information Retrevial, Introduction to Data Management (SQL), Beyond SQL (NoSQL), Machine Learning and Data-Mining, System Design, Software Testing ",
     icon: React.createElement(LuGraduationCap),
     pic: uciPng,
@@ -151,13 +151,13 @@ export const skillsData = [
     "CSS",
     "Tailwind",
     "React",
+    "React Native",
     "Next.js",
     "Git",
     "SQL",
     "SQL Server",
-    "MySQL",
     "PostgreSQL",
-    "NoSQL",
+    "Firebase",
     "MongoDB",
     "PySpark",
 ] as const;

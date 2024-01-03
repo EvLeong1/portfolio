@@ -40,20 +40,20 @@ export default function Education() {
                             contentStyle={{ 
                                 background: theme === 'light' ? "#FDFBFF" : "#64748B", 
                                 color: theme === 'light' ? "black" : "white", 
-                                border: theme === 'dark' ? "2px solid #D697FF" : "2px solid #542375", 
+                                border: theme === 'dark' ? "2px solid #D697FF" : "2px solid #000D61", 
                                 boxShadow:"none", textAlign:"left", padding:"1.3rem 2rem"}}
-                            contentArrowStyle={{ borderRight: theme === 'dark' ? "0.4rem solid #D697FF" : "0.4rem solid #542375" }}
+                            contentArrowStyle={{ borderRight: theme === 'dark' ? "0.4rem solid #D697FF" : "0.4rem solid #000D61" }}
                             date={expItem.date}
                             icon={expItem.icon}
                             iconStyle={{
                                 background: theme === 'light' ? "#FDFBFF" : "#64748B",
                                 fontSize: "1.5rem",
-                                color: theme === 'dark' ? "#D697FF" : "#542375", // "#D697FF",
-                                boxShadow: theme === 'dark' ? "0 0 0 0.3rem #D697FF" : "0 0 0 0.3rem #542375",
+                                color: theme === 'dark' ? "#D697FF" : "#000D61", // "#D697FF",
+                                boxShadow: theme === 'dark' ? "0 0 0 0.3rem #D697FF" : "0 0 0 0.3rem #000D61",
                                 }}
                             
                         >
-                            <h3 className="font-bold capitalize text-D697FF-500">{expItem.title}</h3>
+                            <h3 className="font-bold capitalize text-D697FF-500 text-2xl">{expItem.title}</h3>
                             <p className="!font-normal !mt-0">{expItem.location}</p>
                             <p className="font-normal !mt-1 text-gray-700 dark:text-gray-300">{expItem.description}</p>
                             <p>Relavent Coursework:</p>

@@ -45,13 +45,13 @@ export default function Experience() {
                                 }}
                             
                         >
-                            <h3 className="font-bold capitalize text-D697FF-500">{expItem.title}</h3>
-                            <p className="!font-normal !mt-0 dark:text-gray-200">{expItem.location}</p>
-                            <p className="font-normal !mt-1 text-gray-700 dark:text-gray-300">{expItem.description}</p>
+                            <h3 className="font-bold capitalize text-D697FF-500 text-2xl">{expItem.title}</h3>
+                            <p className="font-normal !mt-0 dark:text-gray-200 text-xl ">{expItem.location}</p>
+                            <p className="font-normal  text-gray-700 dark:text-gray-300">{expItem.description}</p>
                             <div className="flex flex-wrap w-[100%] gap-2 mt-[1rem] items-center">
                                 {
                                 expItem.tags.map((tag, index) => (
-                                    <li className = 'bg-blue-300 px-3 py-1  text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default list-none' 
+                                    <li className = 'bg-blue-900 px-3 py-1  text-[0.7rem] uppercase tracking-wider text-white rounded-full hover:scale-105 transition cursor-default list-none' 
                                     key = {index}>{tag}</li>
                                 ))}
 
