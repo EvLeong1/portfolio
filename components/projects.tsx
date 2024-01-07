@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import SectionHeading from './section-heading';
 import { projectsData } from '@/lib/data';
 import Image from 'next/image';
@@ -14,6 +14,8 @@ import { useSectionInView } from '@/lib/hooks';
 
 export default function Projects() {
     const { ref } = useSectionInView("Projects", 0.1);
+
+    
   
 
   return (
@@ -45,6 +47,13 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
     const scaleProg = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
     const opacityProg = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
+    const [isExpanded, setIsExpanded] = useState<boolean>(false);
+
+    const handleExpandClick = () => {
+        console.log(isExpanded);
+        setIsExpanded((prevExpanded) => !prevExpanded);
+      };
+      
     return (
         
 
@@ -57,9 +66,9 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
             className='group mb-3 sm:mb-8 last:mb-0'>
 
             <section 
-            className='bg-[#E5D9C5] dark:bg-slate-900 max-w-[60rem] border border-black/5 overflow-hidden
+            className={`bg-[#E5D9C5] dark:bg-slate-900 max-w-[60rem] border border-black/5 overflow-hidden
             sm:pr-8 relative sm:h-[26rem] mb-3 sm:mb-8 last:mb-0 even:pl-8
-            hover:bg-[#D3C9B8] transition rounded-lg sm:group-even:pl-8 pl-4 '>
+            hover:bg-[#D3C9B8] transition rounded-lg sm:group-even:pl-8 pl-4 flex ${isExpanded ? ' justify-center items-center' : ''}`}>
                 <div className='pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 
                 sm:max-w-[60%] flex flex-col h-full sm:group-even:ml-[18rem] justify-center '>
                     
@@ -91,28 +100,24 @@ function Project({title, description, tags, imageUrl,link,}: ProjectProps) {
                     
                 </div>
                 
-                <Image src={imageUrl} alt={title} 
+                <Image
+                src={imageUrl}
+                alt={title}
                 quality={100}
-                className='absolute hidden sm:block top-8 -right-40
-                w-[28.25rem] rounded-lg shadow-2xl 
-                transition
-
-                group-hover:scale-[1.15]
-                group-hover:-translate-x-4
-                group-hover:translate-y-3
-                group-hover:-rotate-2
-
-                group-even:group-hover:translate-x-3
-                group-even:group-hover:translate-y-3
-                group-even:group-hover:rotate-2
-
-                group-even:-right-[initial] 
-                group-even:-left-40
-                
-                click:scale-[1.25]
-                '
-                
+                className={`absolute hidden sm:block -right-40
+                            w-[30rem] rounded-lg shadow-2xl 
+                            transition group-even:-right-[initial] 
+                            group-even:-left-40
+                            ${isExpanded ? 'w-[44rem] items-center justify-center -translate-x-80 group-even:translate-x-80' : 'top-20'}
+                            `}
                 />
+                 {/* Button to expand/collapse */}
+                <button
+                className=' hidden sm:block absolute bottom-4 right-4 px-4 py-2 bg-gray-800 text-white rounded-md cursor-pointer'
+                onClick={handleExpandClick}
+                >
+                {isExpanded ? 'Hide' : 'View'}
+                </button>
                 
             </section>
             <Image src={imageUrl} alt={title} 

@@ -18,7 +18,7 @@ export default function Header() {
     <motion.div className="fixed top-0 left-1/2 h-[4.5rem]  
     border border-black dark:border-gray-700 border-opacity-40 bg-[#E5D9C5] dark:bg-gray-900 dark:bg-opacity-95 bg-opacity-95
     shadow-lg shadow-black/[0.05] backdrop:blur-[0.5rem]
-    sm:top-6 sm:h-[3.25rem] sm:w-[44rem] sm:rounded-full rounded-full mt-4 w-[90%]" //changed sm:w to 44rem instead of default to add Education Tab
+    sm:top-6 sm:h-[3.25rem] sm:w-[50rem] sm:rounded-full rounded-full mt-4 w-[90%]" //changed sm:w to 44rem instead of default to add Education Tab
     initial={{y: -100, x: "-50%", opacity: 0}}
     animate={{y: 0, x: "-50%",opacity: 1}}
     
