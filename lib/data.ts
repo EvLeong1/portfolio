@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuApple, LuDatabase, LuGraduationCap, LuKeyboard, LuLaptop, LuMusic } from "react-icons/lu";
+import { BiNetworkChart } from "react-icons/bi";
 import acraffle1Png from "@/public/acraffle1.png";
 import acraffle2Png from "@/public/acraffle2.png";
 import acraffle3Png from "@/public/acraffle4.png";
@@ -72,6 +73,16 @@ export const experiencesData = [
     icon: React.createElement(LuLaptop),
     date: "Jun 2023 - Aug 2023",
     tags: ["C#", ".NET", "SQL", "MS SQL Server", "Hue"],
+
+  },
+  {
+    title: "Student Machine Learning Intern",
+    location: "Children's Hospital of Orange County | Orange, CA",
+    description:
+      "Contributed to AI medical research by predicting if blunt trauma patients require medical intervention. Implemented various machine learning models such as kNN, Neural Network, and Random Forest using PyTorch.",
+    icon: React.createElement(BiNetworkChart),
+    date: "Jun 2024 - Aug 2024",
+    tags: ["Machine Learning", "Neural Network", "Python", "PyTorch", "React"],
 
   },
   {
