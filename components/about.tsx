@@ -8,7 +8,7 @@ import { useActiveSectionContext } from '@/context/active-section-context';
 import { time } from 'console';
 import { useSectionInView } from '@/lib/hooks';
 import Image from 'next/image';
-import pfp from '@/public/professional pfp.jpg';
+import pfp from '@/public/grad_pic.jpg';
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -39,13 +39,13 @@ export default function About() {
           </div>
         </div>
         <div className='flex flex-col gap-5'>
-          <p className='text-4xl font-bold  text-red-900/90 dark:text-yellow-200'>I'm Evan Leong</p>
+          <p className='text-4xl font-bold  text-red-900/90 dark:text-yellow-200'>Hi I'm Evan!</p>
           <p className='w-full text-lg text-left mb-3 font-UnbuntuMono'>
-          I'm entering my senior year at the University of California, Irvine, pursuing a Bachelor of Science in Computer Science.
+          I recently finished my senior year at the UC, Irvine, with a Bachelor of Science in Computer Science!
           <br /> <br />
           Before this, I studied at Diablo Valley College, earning an Associate of Science in Computer Science with a 3.95 GPA. 
           <br /> <br /> 
-          Previously I was an intern at First American Title and am now continuing part time work this school year as an Associate Software Engineer.
+          I am currently working as an Associate Performance Engineer at Veeva Systems as a part of the Generation Veeva program! I am learning a lot about navigating post grad life and how to create the foundation for a successful career in the tech insdustry.
           </p>
         </div>
 

@@ -9,6 +9,8 @@ import acraffle3Png from "@/public/acraffle4.png";
 import prosperPng from "@/public/prosperSearch.png";
 import uciPng from "@/public/uci.png";
 import lardchatPng from "@/public/lardchat.png";
+import chocPng from "@/public/CHOC.png";
+import fabflixPng from "@/public/fabflix.png";
 // import wordanalyticsImg from "@/public/wordanalytics.png";
 
 
@@ -57,16 +59,6 @@ export const experiencesData = [
   },
   {
     title: "Software Engineer Intern",
-    location: "21st Century Sounds | Pleasant Hill, CA",
-    description:
-      "Contributed to frontend development for a website using Node.js/ JavaScript. Also conducted requirements gathering through client outreach and MongoDB database to store client information",
-    icon: React.createElement(LuDatabase),
-    date: "May 2022 - Aug 2022",
-    tags: ["Node.js", "JavaScript", "MongoDB", "Requirements Analysis", "Client Outreach"],
-
-  },
-  {
-    title: "Software Engineer Intern",
     location: "First American | Santa Ana, CA",
     description:
       "Contributed to a custom-built data analyticstool using the .NET framework, C#, LINQ, and MS SQL Server as a backend engineer. Also generated reports for international teams using SQL through Hue and Apache Impala",
@@ -91,8 +83,17 @@ export const experiencesData = [
     description:
       "Developed a user facing report archive system with TypeScript frontend utilizing jQuery, connected to a C# and MS SQL Server backend as a full stack engineer. Focused on creating an adaptive, responsive, and highly accessible user interface using Kendo UI",
     icon: React.createElement(LuLaptop),
-    date: "Oct 2023 - present",
+    date: "Oct 2023 - Aug 2024",
     tags: ["TypeScript", "jQuery", "C#", "MS SQL Server", "SQL"],
+  },
+  {
+    title: "Associate Performance Engineer",
+    location: "Veeva Systems | Pleasanton, CA",
+    description:
+      "",
+    icon: React.createElement(LuLaptop),
+    date: "Aug 2024 - present",
+    tags: ["Performace Engineering"],
   },
 ] as const;
 
@@ -142,11 +143,28 @@ export const projectsData = [
   {
     title: "ProsperSearch",
     description:
-      " An AI-powered search engine made with Python using the OpenAI API for site summaries, tf-idf ranking, and a user-friendly Flask web GUI, achieving sub-150 ms query responses.",
+      "An AI-powered search engine made with Python using the OpenAI API for site summaries, tf-idf ranking, and a user-friendly Flask web GUI, achieving sub-150 ms query responses.",
     tags: ["Python", "OpenAI API", "Flask", "HTML / CSS"],
     imageUrl: prosperPng,
     link: 'https://github.com/EvLeong1/prosperSearchEngine',
   },
+  {
+    title: "FabFlix",
+    description:
+      "Fabflix allows users to search for, add, and purchase movies. The project involved setting up AWS, MySQL, JDBC, and Tomcat, as well as implementing features like reCAPTCHA, HTTPS, XML parsing, full-text search, and utilizing Docker and Kubernetes for microservices and containerization.",
+    tags: ["HTML/CSS","JavaScript", "MySQL", "AWS", "Docker", "Java", "Tomcat"],
+    imageUrl: fabflixPng,
+    link: 'https://github.com/EvLeong1/',
+  },
+  {
+    title: "Predicting Surgery with Machine Learning - CHOC",
+    description:
+      "Contributed to AI medical research by predicting if blunt trauma patients require medical intervention. Implemented various machine learning models such as kNN, Neural Network, and Random Forest using PyTorch. Also created a React web interface connected to a Flask backend to display the results of our model.",
+    tags: ["Machine Learning", "Python", "PyTorch", "scikit-learn", "React", "TypeScript"],
+    imageUrl: chocPng,
+    link: 'https://github.com/EvLeong1/CS180A_CHOC',
+  },
+  
   
   
 ] as const;
@@ -171,4 +189,6 @@ export const skillsData = [
     "Firebase",
     "MongoDB",
     "PySpark",
+    "PyTorch",
+    "Machine Learning"
 ] as const;

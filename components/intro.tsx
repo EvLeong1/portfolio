@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { motion, useAnimation} from 'framer-motion'
-import pfp from "@/public/pfp.png";
+import pfp from "@/public/grad_pic.jpg";
 import Link from 'next/link'
 import { BsArrowRight, BsGithub } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
@@ -53,7 +53,7 @@ export default function Intro() {
                 animate={{ x: [-5, 5] }}
                 transition={{ repeat: Infinity, duration: 1, repeatType: "reverse", ease: "easeInOut" }}
             ></motion.div>
-            <span className='text-slate-800 sm:text-3xl text-1xl dark:text-gray-200 font-UnbuntoMono'>Full Stack Software Engineer</span>
+            <span className='text-slate-800 sm:text-3xl text-1xl dark:text-gray-200 font-UnbuntoMono'>Software Engineer</span>
         </motion.h1>
     </motion.div>
 
